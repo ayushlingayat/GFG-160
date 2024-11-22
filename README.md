@@ -1,6 +1,7 @@
-# 📂 GFG 160 Repository 
 
-Welcome to my **GFG 160 Repository**, where I solve various challenges that GFG is giving me.
+# 📚 GFG160: Master Data Structures and Algorithms in 160 Days
+
+This repository contains my journey through the **GFG160** syllabus, designed to master Data Structures and Algorithms in 160 days. Each topic is broken down into manageable sections with daily goals.
 
 ---
 
@@ -8,12 +9,6 @@ Welcome to my **GFG 160 Repository**, where I solve various challenges that GFG 
 - **Comprehensive Solutions**: Includes multiple approaches like brute force, optimized, and best-case implementations.
 - **My Language of Choice**: Mainly solved using **Java**.
 - **Explanation**: Each problem includes comments in the code for better understanding.
-
-# 📚 GFG160: Master Data Structures and Algorithms in 160 Days
-
-This repository contains my journey through the **GFG160** syllabus, designed to master Data Structures and Algorithms in 160 days. Each topic is broken down into manageable sections with daily goals.
-
----
 
 ## 🗂️ Detailed Syllabus
 
