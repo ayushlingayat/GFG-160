@@ -133,7 +133,7 @@ This repository contains my journey through the **GFG160** syllabus, designed to
 
 ## 🌟 Goals
 - Build a solid foundation in **DSA**.
-- Solve 500+ problems across different topics.
+- Solve 160 problems.
 - Prepare for competitive programming and coding interviews.
 
 ---
