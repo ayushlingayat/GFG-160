@@ -1,0 +1,43 @@
+public class MinChartoaddDay20 {
+
+    public static int minChar(String str) {
+        int N = str.length();
+        String reversedStr = new StringBuilder(str).reverse().toString();
+        String modifiedStr = str + "$" + reversedStr;
+        int[] lps = new int[2 * N + 1];
+        computeLPSArray(modifiedStr, lps);
+        return N - lps[2 * N];
+    }
+
+    private static void computeLPSArray(String str, int[] lps) {
+        int N = str.length();
+        int len = 0;  
+
+        int i = 1;
+        while (i < N) {
+            if (str.charAt(i) == str.charAt(len)) {
+                len++;
+                lps[i] = len;
+                i++;
+            } else {
+                if (len != 0) {
+                    len = lps[len - 1];
+                } else {
+                    lps[i] = 0;
+                    i++;
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        // Test cases
+        String str1 = "abc";
+        String str2 = "aacecaaa";
+        String str3 = "abcd";
+        
+        System.out.println("Minimum characters to add for \"" + str1 + "\" to become a palindrome: " + minChar(str1));
+        System.out.println("Minimum characters to add for \"" + str2 + "\" to become a palindrome: " + minChar(str2));
+        System.out.println("Minimum characters to add for \"" + str3 + "\" to become a palindrome: " + minChar(str3));
+    }
+}
